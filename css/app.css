@@ -9,7 +9,7 @@ body {
 .nav li {
     text-decoration: none;
     display: inline-block;
-    border-radius: 5px;
+    margin-bottom: 0px;
 }
 
 .middle {
@@ -17,12 +17,17 @@ body {
     height: 300px;
 }
 
-.con {
-    text-align: center;
+.con{
+    margin-right: 0px;
+    font-size: 20px;
+    text-align: right;
 }
+
 
 .head {
     background-color: red;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
 .nav li a:hover {
@@ -34,15 +39,28 @@ body {
     border-radius: 5px;
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     padding: 5px;
-}
 
+}
+.fa-list.modify{
+    display:none;
+    font-size: 35px;
+    position: absolute;
+    right: 30px;
+    top:30px;
+     cursor: pointer;
+}
+.icons{
+align-content: right;
+    margin-right: 0px;
+}
 
 /*slider*/
 
 img {
-    width: 100%;
+    width: 50%;
+    height: 30px;
 }
 
 .slide-window {
@@ -89,3 +107,54 @@ p {
 .powered {
     color: #EB008B;
 }
+@media screen and (max-width: 1025px){
+
+
+        .nav li {
+        text-decoration: none;
+        display: block;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 0px;
+        text-align: right;
+        margin-right: 0px;
+
+
+    }
+
+
+    .nav li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .nav li a {
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .fa-list.modify{
+        display: block;
+    }
+    .con{
+        margin-right: 0px;
+    font-size: 15px;
+        text-align: center;
+        padding: 5px;
+
+    }
+/*
+    body{
+        overflow-x: hidden;
+    }
+*/
+
+}
+.facebook{
+    color: blue;
+}
+.twitter{
+    color: aqua;
+    }
