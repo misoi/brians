@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Optical Events</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/style.css">
@@ -167,7 +167,14 @@
                  $(".nav").fadeOut();
                    menu = false;
             }
-                         })
+                         });
+
+        $(document).ready(function(){
+            $('.nav li.active').click(function(){
+                $('.nav li.active').removeClass('active');
+                $(this).addClass('active');
+            })
+        });
 
     </script>
 

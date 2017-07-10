@@ -91,6 +91,10 @@ body {
     padding: 5px;
 
 }
+.nav li .active{
+    background-color: white;
+    color: black;
+}
 .fa-list.modify{
     display:none;
     font-size: 35px;
