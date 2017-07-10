@@ -42,7 +42,7 @@
                 <nav class="nav">
                     <ul>
 
-                        <li class="is-active">
+                        <li class="active">
                             <a href="index.html">
                                         Home
                                     </a>
@@ -169,8 +169,8 @@
             }
                          });
 
-        $(document).ready(function(){
-            $('.nav li.active').click(function(){
+        $('document').ready(function(e){
+            $('.nav li.active').click(function(e){
                 $('.nav li.active').removeClass('active');
                 $(this).addClass('active');
             })
