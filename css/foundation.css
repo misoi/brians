@@ -1467,13 +1467,13 @@ kbd {
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
-  background-color: #2199e8;
+  background-color: red;
   color: #fefefe; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
-    background-color: #1583cc;
-    color: #fefefe; }
+    background-color:black;
+    color: white; }
   .button.tiny {
     font-size: 0.6rem; }
   .button.small {
@@ -1912,7 +1912,8 @@ select {
     .button-group .button:not(:last-child) {
       margin-right: 1px; }
   .button-group.tiny .button {
-    font-size: 0.6rem; }
+    font-size: 0.6rem;
+}
   .button-group.small .button {
     font-size: 0.75rem; }
   .button-group.large .button {
