@@ -232,4 +232,9 @@ p {
 .fieldset{
     color: black;
     font-weight: normal;
+    text-align: left;
+}
+.h1{
+    color: red;
+    text-shadow: 2px 2px 4px #000000;
 }
