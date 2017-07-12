@@ -28,12 +28,21 @@ body {
      top: 55px;
 
 }
+.boutrow{
+    text-align: left;
+    font-family: 'Jura', sans-serif;
+}
+.boutimg{
+    height: 30%;
+    width: 50%;
+}
 .p{
-   font-family: 'Wire One', sans-serif;
+    font-family: 'Jura', sans-serif;
+/*   font-family: 'Wire One', sans-serif;*/
 /*    font-family: 'Marcellus', serif;*/
     text-decoration-style: wavy;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 60px;
     margin-left: 60px;
 
@@ -41,7 +50,8 @@ body {
 .box{
 /*   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 3, 0.19);*/
     box-shadow: 0 10px 15px rgba(0, 0,0, 0.3);
-    font-family: 'Marcellus', serif;
+/*    font-family: 'Marcellus', serif;*/
+    font-family: 'Jura', sans-serif;
     text-align: left;
     font-size: 16px;
     color: black;
@@ -210,3 +220,16 @@ p {
 .twitter{
     color: aqua;
     }
+.fucultyimage{
+    height: 40%;
+    width: 40%;
+
+}
+.fucultydiv{
+     padding: 10px;
+    display: block;
+}
+.fieldset{
+    color: black;
+    font-weight: normal;
+}
