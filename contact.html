@@ -84,14 +84,37 @@
         <div class="small-12 columns large-12 columns middle">
             <br>
             <div class="small-3 columns h1">
-                <h1>Optical Events value you feedback</h1>
+                <h2>Optical Events value you feedback</h2>
             </div>
             <div class="small-8 columns fieldset">
 
 
-        <form>
+        <form action="https://formspree.io/cytnhia.chepkemoi@gmail.com" class="contact" name="contact" method="post" id="register-form" onsubmit="return Submit()">
  <fieldset>
   <legend><h5 class="h1">Send us an Email:</h5></legend>
+
+                        <label for="name"> Name</label>
+                        <input type="text" name="name" required placeholder="Your name" />
+
+
+
+                        <label for="email">Email</label>
+                        <input type="text" name="_replyto" required placeholder="Valid Email" />
+
+
+
+                        <label for="phoneno">Phone No:</label>
+                        <input type="text" name="contact" required placeholder=" Your contacts" />
+
+
+                        <label for="comment">Message:</label>
+                        <textarea value="Your message" name="message" required placeholder="Put your message here"></textarea>
+
+
+                        <input type="submit" value="Send" class="button submit " />
+
+
+<!--
                 <label>Name</label>
                 <input type="text">
                 <label> Email</label>
@@ -100,6 +123,9 @@
                 <input type="text">
                <label> Message</label>
                 <textarea name="Message" placeholder="Put your message here" ></textarea>
+     <br>
+      <input type="submit" value="Send" class="button submit " />
+-->
  </fieldset>
 </form>
 
@@ -137,19 +163,44 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript">
-        var menu = false;
-        $(".fa-list.modify").click(function(){
-           if(menu == false){
-                   $(".nav").fadeIn();
-
-                   menu = true;
-                }
-            else{
-                 $(".nav").fadeOut();
-                   menu = false;
+        function Submit() {
+            var emailRegex = /^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+            var name = document.contact.fullname;
+            var mail = document.contact.email;
+            var phone = document.contact.contact;
+            var post = document.contact.message;
+            if (name.value === "") {
+                window.alert("Please enter your full name.");
+                name.focus();
+                return false;
             }
-                         })
-
+            if (mail.value === "") {
+                window.alert("Please enter your email.");
+                email.focus();
+                return false;
+            }
+            if (mail.value.indexOf("@", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (mail.value.indexOf(".", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (phone.value === "") {
+                window.alert("Please enter your phone number.");
+                contact.focus();
+                return false;
+            }
+            if (post.value === "") {
+                window.alert("Empty message can't be send.");
+                message.focus();
+                return false;
+            }
+            return true
+        }
     </script>
 </body>
 

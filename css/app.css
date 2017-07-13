@@ -212,8 +212,18 @@ p {
     body{
         overflow-x: hidden;
     }
+    .fucultydiv :not(img){
+    position: absolute;
+    top: 100%;
+    left: 3%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 52%;
+    opacity: 0;
+    transition: .3s;
 
-}
+    }}
 .facebook{
     color: blue;
 }
@@ -223,18 +233,48 @@ p {
 .fucultyimage{
     height: 40%;
     width: 40%;
+    border-radius: 4px;
+    transition: .3s;
 
 }
+.fucultyimage:hover{
+    filter: blur(2px)brightness(70%);
+    box-shadow: 0 0 16px cyan;
+}
+
+
 .fucultydiv{
-     padding: 10px;
-    display: block;
+     padding: 3px;
+    position: relative;
 }
 .fieldset{
     color: black;
-    font-weight: normal;
     text-align: left;
+    font-weight: 500;
 }
 .h1{
-    color: red;
+    color: black;
     text-shadow: 2px 2px 4px #000000;
 }
+/* facility images css*/
+
+.fucultydiv :not(img){
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 30%;
+    opacity: 0;
+    transition: .3s;
+}
+.fucultydiv:hover :not(img){
+    opacity: 1;
+}
+.fucult{
+    display:block;
+    padding: 2px;
+}
+
+
