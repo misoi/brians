@@ -273,7 +273,8 @@ p {
 }
 .fucult{
     display:block;
-    padding: 2px;
+    float: left;
+    left: 0px;
 }
 
 /*services*/
@@ -300,6 +301,20 @@ h4{
 }
 .firstdiv h5{
 font-family: 'Jura', sans-serif;
+}
+
+
+.portfolioimage{
+    height: 30%;
+    width: 30%;
+    border-radius: 4px;
+    transition: .3s;
+
+}
+
+.portfolioimage:hover{
+    filter: blur(2px)brightness(70%);
+    box-shadow: 0 0 16px cyan;
 }
 
 

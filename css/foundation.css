@@ -936,10 +936,11 @@ button {
   .medium-collapse > .column, .medium-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
-  .medium-collapse .row {
-    margin-left: 0;
-    margin-right: 0;
-      background-color: white;
+.medium-collapse row {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+      padding: 5px;
    }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
     padding-left: 0.9375rem;
@@ -1670,7 +1671,8 @@ label {
   color: #0a0a0a; }
   label.middle {
     margin: 0 0 1rem;
-    padding: 0.5625rem 0; }
+    padding: 0.5625rem 0;
+}
 
 .help-text {
   margin-top: -0.5rem;
