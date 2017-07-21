@@ -42,7 +42,7 @@ body {
 #slider figure img {
     width: 20%;
     float: left;
-    height: 300px;
+    height: 400px;
     width: cover;
 }
 
@@ -54,7 +54,7 @@ body {
     text-align: left;
     font-size: 0;
     animation: 10s slidy infinite;
-    height: 200px;
+    height: 400px;
 }
 
 
